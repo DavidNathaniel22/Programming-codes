@@ -1,0 +1,47 @@
+#(1) Create a program that accepts a non- negative integer greater than 2 and determine the number
+#of times it was repeatedly divide to 2 until it reaches less than 2.
+
+num = int(input("Enter integer number: "))
+
+count = 0
+
+while num >= 2:
+   num = num - 2
+   count += 1
+
+print(count)
+
+#(2) Create a program that accepts an integer value and display if it is even or odd number
+
+num1 = int(input("Enter integer value: "))
+
+if num1 % 2:
+   print("Odd")
+else:
+   print("Even")
+
+#(3) Create a program that accepts 2 non-negative numbers, and display corresponding answer
+#based on the chosen mathematical operation [A] addition [S] subtraction [M] multiplication [D] Division [R] remainder.
+
+num2 = int(input("Enter number 1: "))
+num3 = int(input("Enter number2: "))
+
+math = input("operation [A] addition [S] subtraction [M] multiplication [D] Division [R] remainder: ")
+
+if math == "A":
+   print(num2 + num3)
+
+elif math == "S":
+   print(num2 - num3)
+
+elif math == "M":
+   print(num2 * num3)
+
+elif math == "D":
+   print(num2 / num3)
+
+elif math == "R":
+   print(num2 % num3)
+
+else:
+   print("No")
